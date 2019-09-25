@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		673D056E22F0137B0039E9F4 /* DOGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		673D056E22F0137B0039E9F4 /* DOGGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOGGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673D057122F0137B0039E9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		673D057322F0137B0039E9F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		673D057622F0137B0039E9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		673D056522F0137B0039E9F4 = {
 			isa = PBXGroup;
 			children = (
-				673D057022F0137B0039E9F4 /* DOGO */,
+				673D057022F0137B0039E9F4 /* DOGGO */,
 				673D056F22F0137B0039E9F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		673D056F22F0137B0039E9F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				673D056E22F0137B0039E9F4 /* DOGO.app */,
+				673D056E22F0137B0039E9F4 /* DOGGO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		673D057022F0137B0039E9F4 /* DOGO */ = {
+		673D057022F0137B0039E9F4 /* DOGGO */ = {
 			isa = PBXGroup;
 			children = (
 				673D057122F0137B0039E9F4 /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				673D057A22F0137B0039E9F4 /* LaunchScreen.storyboard */,
 				673D057D22F0137B0039E9F4 /* Info.plist */,
 			);
-			path = DOGO;
+			path = DOGGO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		673D056D22F0137B0039E9F4 /* DOGO */ = {
+		673D056D22F0137B0039E9F4 /* DOGGO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 673D058022F0137B0039E9F4 /* Build configuration list for PBXNativeTarget "DOGO" */;
+			buildConfigurationList = 673D058022F0137B0039E9F4 /* Build configuration list for PBXNativeTarget "DOGGO" */;
 			buildPhases = (
 				673D056A22F0137B0039E9F4 /* Sources */,
 				673D056B22F0137B0039E9F4 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = DOGO;
+			name = DOGGO;
 			productName = DOGO;
-			productReference = 673D056E22F0137B0039E9F4 /* DOGO.app */;
+			productReference = 673D056E22F0137B0039E9F4 /* DOGGO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 673D056922F0137B0039E9F4 /* Build configuration list for PBXProject "DOGO" */;
+			buildConfigurationList = 673D056922F0137B0039E9F4 /* Build configuration list for PBXProject "DOGGO" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				673D056D22F0137B0039E9F4 /* DOGO */,
+				673D056D22F0137B0039E9F4 /* DOGGO */,
 			);
 		};
 /* End PBXProject section */
@@ -288,8 +288,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = happymonkeys.ios.DOGO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = happymonkeys.ios.DOGGO;
+				PRODUCT_NAME = DOGGO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,8 +305,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = happymonkeys.ios.DOGO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = happymonkeys.ios.DOGGO;
+				PRODUCT_NAME = DOGGO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		673D056922F0137B0039E9F4 /* Build configuration list for PBXProject "DOGO" */ = {
+		673D056922F0137B0039E9F4 /* Build configuration list for PBXProject "DOGGO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				673D057E22F0137B0039E9F4 /* Debug */,
@@ -324,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		673D058022F0137B0039E9F4 /* Build configuration list for PBXNativeTarget "DOGO" */ = {
+		673D058022F0137B0039E9F4 /* Build configuration list for PBXNativeTarget "DOGGO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				673D058122F0137B0039E9F4 /* Debug */,
