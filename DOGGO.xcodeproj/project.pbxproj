@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		673D057222F0137B0039E9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673D057122F0137B0039E9F4 /* AppDelegate.swift */; };
-		673D057422F0137B0039E9F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673D057322F0137B0039E9F4 /* ViewController.swift */; };
-		673D057722F0137B0039E9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673D057522F0137B0039E9F4 /* Main.storyboard */; };
-		673D057922F0137B0039E9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673D057822F0137B0039E9F4 /* Assets.xcassets */; };
-		673D057C22F0137B0039E9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673D057A22F0137B0039E9F4 /* LaunchScreen.storyboard */; };
+		5C7C2CF723491311006FF459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C2CF623491311006FF459 /* AppDelegate.swift */; };
+		5C7C2CF923491311006FF459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C2CF823491311006FF459 /* ViewController.swift */; };
+		5C7C2CFC23491311006FF459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C2CFA23491311006FF459 /* Main.storyboard */; };
+		5C7C2CFE23491315006FF459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C2CFD23491315006FF459 /* Assets.xcassets */; };
+		5C7C2D0123491315006FF459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C2CFF23491315006FF459 /* LaunchScreen.storyboard */; };
+		5C7C2D0B234944FA006FF459 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C2D0A234944FA006FF459 /* Register.swift */; };
+		5C7C2D0D23494EAB006FF459 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C2D0C23494EAB006FF459 /* Settings.swift */; };
+		5CD2E37E234B02A30003FBE4 /* TrackPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2E37D234B02A30003FBE4 /* TrackPet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		673D056E22F0137B0039E9F4 /* DOGGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOGGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		673D057122F0137B0039E9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		673D057322F0137B0039E9F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		673D057622F0137B0039E9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		673D057822F0137B0039E9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		673D057B22F0137B0039E9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		673D057D22F0137B0039E9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C7C2CF323491311006FF459 /* DOGGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOGGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C7C2CF623491311006FF459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C7C2CF823491311006FF459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C7C2CFB23491311006FF459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C7C2CFD23491315006FF459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C7C2D0023491315006FF459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C7C2D0223491315006FF459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C7C2D0A234944FA006FF459 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		5C7C2D0C23494EAB006FF459 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5CD2E37D234B02A30003FBE4 /* TrackPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		673D056B22F0137B0039E9F4 /* Frameworks */ = {
+		5C7C2CF023491311006FF459 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,31 +41,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		673D056522F0137B0039E9F4 = {
+		5C7C2CEA23491311006FF459 = {
 			isa = PBXGroup;
 			children = (
-				673D057022F0137B0039E9F4 /* DOGGO */,
-				673D056F22F0137B0039E9F4 /* Products */,
+				5C7C2CF523491311006FF459 /* DOGGO */,
+				5C7C2CF423491311006FF459 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		673D056F22F0137B0039E9F4 /* Products */ = {
+		5C7C2CF423491311006FF459 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				673D056E22F0137B0039E9F4 /* DOGGO.app */,
+				5C7C2CF323491311006FF459 /* DOGGO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		673D057022F0137B0039E9F4 /* DOGGO */ = {
+		5C7C2CF523491311006FF459 /* DOGGO */ = {
 			isa = PBXGroup;
 			children = (
-				673D057122F0137B0039E9F4 /* AppDelegate.swift */,
-				673D057322F0137B0039E9F4 /* ViewController.swift */,
-				673D057522F0137B0039E9F4 /* Main.storyboard */,
-				673D057822F0137B0039E9F4 /* Assets.xcassets */,
-				673D057A22F0137B0039E9F4 /* LaunchScreen.storyboard */,
-				673D057D22F0137B0039E9F4 /* Info.plist */,
+				5C7C2CF623491311006FF459 /* AppDelegate.swift */,
+				5C7C2CF823491311006FF459 /* ViewController.swift */,
+				5C7C2D0A234944FA006FF459 /* Register.swift */,
+				5CD2E37D234B02A30003FBE4 /* TrackPet.swift */,
+				5C7C2D0C23494EAB006FF459 /* Settings.swift */,
+				5C7C2CFA23491311006FF459 /* Main.storyboard */,
+				5C7C2CFD23491315006FF459 /* Assets.xcassets */,
+				5C7C2CFF23491315006FF459 /* LaunchScreen.storyboard */,
+				5C7C2D0223491315006FF459 /* Info.plist */,
 			);
 			path = DOGGO;
 			sourceTree = "<group>";
@@ -67,39 +76,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		673D056D22F0137B0039E9F4 /* DOGGO */ = {
+		5C7C2CF223491311006FF459 /* DOGGO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 673D058022F0137B0039E9F4 /* Build configuration list for PBXNativeTarget "DOGGO" */;
+			buildConfigurationList = 5C7C2D0523491315006FF459 /* Build configuration list for PBXNativeTarget "DOGGO" */;
 			buildPhases = (
-				673D056A22F0137B0039E9F4 /* Sources */,
-				673D056B22F0137B0039E9F4 /* Frameworks */,
-				673D056C22F0137B0039E9F4 /* Resources */,
+				5C7C2CEF23491311006FF459 /* Sources */,
+				5C7C2CF023491311006FF459 /* Frameworks */,
+				5C7C2CF123491311006FF459 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DOGGO;
-			productName = DOGO;
-			productReference = 673D056E22F0137B0039E9F4 /* DOGGO.app */;
+			productName = DOGGO;
+			productReference = 5C7C2CF323491311006FF459 /* DOGGO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		673D056622F0137B0039E9F4 /* Project object */ = {
+		5C7C2CEB23491311006FF459 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = HappyMonkeys;
+				ORGANIZATIONNAME = DOGGO;
 				TargetAttributes = {
-					673D056D22F0137B0039E9F4 = {
+					5C7C2CF223491311006FF459 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 673D056922F0137B0039E9F4 /* Build configuration list for PBXProject "DOGGO" */;
+			buildConfigurationList = 5C7C2CEE23491311006FF459 /* Build configuration list for PBXProject "DOGGO" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 673D056522F0137B0039E9F4;
-			productRefGroup = 673D056F22F0137B0039E9F4 /* Products */;
+			mainGroup = 5C7C2CEA23491311006FF459;
+			productRefGroup = 5C7C2CF423491311006FF459 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				673D056D22F0137B0039E9F4 /* DOGGO */,
+				5C7C2CF223491311006FF459 /* DOGGO */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		673D056C22F0137B0039E9F4 /* Resources */ = {
+		5C7C2CF123491311006FF459 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				673D057C22F0137B0039E9F4 /* LaunchScreen.storyboard in Resources */,
-				673D057922F0137B0039E9F4 /* Assets.xcassets in Resources */,
-				673D057722F0137B0039E9F4 /* Main.storyboard in Resources */,
+				5C7C2D0123491315006FF459 /* LaunchScreen.storyboard in Resources */,
+				5C7C2CFE23491315006FF459 /* Assets.xcassets in Resources */,
+				5C7C2CFC23491311006FF459 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		673D056A22F0137B0039E9F4 /* Sources */ = {
+		5C7C2CEF23491311006FF459 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				673D057422F0137B0039E9F4 /* ViewController.swift in Sources */,
-				673D057222F0137B0039E9F4 /* AppDelegate.swift in Sources */,
+				5C7C2D0B234944FA006FF459 /* Register.swift in Sources */,
+				5C7C2CF923491311006FF459 /* ViewController.swift in Sources */,
+				5C7C2D0D23494EAB006FF459 /* Settings.swift in Sources */,
+				5C7C2CF723491311006FF459 /* AppDelegate.swift in Sources */,
+				5CD2E37E234B02A30003FBE4 /* TrackPet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		673D057522F0137B0039E9F4 /* Main.storyboard */ = {
+		5C7C2CFA23491311006FF459 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				673D057622F0137B0039E9F4 /* Base */,
+				5C7C2CFB23491311006FF459 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		673D057A22F0137B0039E9F4 /* LaunchScreen.storyboard */ = {
+		5C7C2CFF23491315006FF459 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				673D057B22F0137B0039E9F4 /* Base */,
+				5C7C2D0023491315006FF459 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		673D057E22F0137B0039E9F4 /* Debug */ = {
+		5C7C2D0323491315006FF459 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +235,7 @@
 			};
 			name = Debug;
 		};
-		673D057F22F0137B0039E9F4 /* Release */ = {
+		5C7C2D0423491315006FF459 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,35 +290,35 @@
 			};
 			name = Release;
 		};
-		673D058122F0137B0039E9F4 /* Debug */ = {
+		5C7C2D0623491315006FF459 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DOGO/Info.plist;
+				INFOPLIST_FILE = DOGGO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = happymonkeys.ios.DOGGO;
-				PRODUCT_NAME = DOGGO;
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE.DOGGO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		673D058222F0137B0039E9F4 /* Release */ = {
+		5C7C2D0723491315006FF459 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DOGO/Info.plist;
+				INFOPLIST_FILE = DOGGO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = happymonkeys.ios.DOGGO;
-				PRODUCT_NAME = DOGGO;
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE.DOGGO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,25 +327,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		673D056922F0137B0039E9F4 /* Build configuration list for PBXProject "DOGGO" */ = {
+		5C7C2CEE23491311006FF459 /* Build configuration list for PBXProject "DOGGO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				673D057E22F0137B0039E9F4 /* Debug */,
-				673D057F22F0137B0039E9F4 /* Release */,
+				5C7C2D0323491315006FF459 /* Debug */,
+				5C7C2D0423491315006FF459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		673D058022F0137B0039E9F4 /* Build configuration list for PBXNativeTarget "DOGGO" */ = {
+		5C7C2D0523491315006FF459 /* Build configuration list for PBXNativeTarget "DOGGO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				673D058122F0137B0039E9F4 /* Debug */,
-				673D058222F0137B0039E9F4 /* Release */,
+				5C7C2D0623491315006FF459 /* Debug */,
+				5C7C2D0723491315006FF459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 673D056622F0137B0039E9F4 /* Project object */;
+	rootObject = 5C7C2CEB23491311006FF459 /* Project object */;
 }

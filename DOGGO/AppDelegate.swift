@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  DOGO
+//  DOGGO
 //
-//  Created by Alam Figueroa Aguilar on 7/29/19.
-//  Copyright © 2019 HappyMonkeys. All rights reserved.
+//  Created by michelle natasha on 10/5/19.
+//  Copyright © 2019 DOGGO. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        print("Application did finish launching")
         return true
     }
 
