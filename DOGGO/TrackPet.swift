@@ -11,11 +11,16 @@ import UIKit
 class TrackPet: UIViewController {
     @IBOutlet weak var petname1: UILabel!
     
-    var name1 = ""
+    let def = UserDefaults.standard
+//    var name1 = Register.GlobalVar.petName1
     
+    func display(){
+        let name1 = def.value(forKey: Register.GlobalVar.petName1) as? String ?? ""
+        petname1.text! = "Welcome "
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        petname1.text = "Welcome " + name1
+//        display()
         // Do any additional setup after loading the view.
     }
     
