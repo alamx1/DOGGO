@@ -2,31 +2,38 @@
 //  TrackPet.swift
 //  DOGGO
 //
-//  Created by michelle natasha on 10/6/19.
+//  Created by michelle natasha on 10/19/19.
 //  Copyright © 2019 DOGGO. All rights reserved.
 //
 
 import UIKit
 
-class TrackPet: UIViewController {
-    @IBOutlet weak var petname1: UILabel!
+class TrackPet: UITableViewCell {
     
-    let def = UserDefaults.standard
-//    var name1 = Register.GlobalVar.petName1
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view.
+//    }
     
-    func display(){
-        let name1 = def.value(forKey: Register.GlobalVar.petName1) as? String ?? ""
-        petname1.text! = "Welcome "
+//    @IBOutlet weak var statuslabel: UILabel!
+//    @IBOutlet weak var petnamelabel: UILabel!
+//    @IBOutlet weak var statuspic: UIImageView!
+//    @IBOutlet weak var petpic: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        display()
-        // Do any additional setup after loading the view.
-    }
-    
 
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
