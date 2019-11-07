@@ -16,6 +16,8 @@
 		5C83E7B82372E84C0016DD16 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83E7B72372E84C0016DD16 /* Pet.swift */; };
 		5C83E7BA2372E9B00016DD16 /* PetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83E7B92372E9B00016DD16 /* PetTableViewCell.swift */; };
 		5C83E7BC2372EB080016DD16 /* PetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83E7BB2372EB080016DD16 /* PetTableViewController.swift */; };
+		5CBF02112373856400114654 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBF02102373856400114654 /* Home.swift */; };
+		5CBF02132373865C00114654 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBF02122373865C00114654 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5C83E7B72372E84C0016DD16 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		5C83E7B92372E9B00016DD16 /* PetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewCell.swift; sourceTree = "<group>"; };
 		5C83E7BB2372EB080016DD16 /* PetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewController.swift; sourceTree = "<group>"; };
+		5CBF02102373856400114654 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5CBF02122373865C00114654 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				5C83E7B92372E9B00016DD16 /* PetTableViewCell.swift */,
 				5C83E7AC2372E0130016DD16 /* Assets.xcassets */,
 				5C83E7A92372E0120016DD16 /* Main.storyboard */,
+				5CBF02122373865C00114654 /* Settings.swift */,
+				5CBF02102373856400114654 /* Home.swift */,
 				5C83E7AE2372E0130016DD16 /* LaunchScreen.storyboard */,
 				5C83E7B12372E0130016DD16 /* Info.plist */,
 			);
@@ -149,10 +155,12 @@
 			files = (
 				5C83E7A82372E0120016DD16 /* PetViewController.swift in Sources */,
 				5C83E7B82372E84C0016DD16 /* Pet.swift in Sources */,
+				5CBF02132373865C00114654 /* Settings.swift in Sources */,
 				5C83E7A42372E0120016DD16 /* AppDelegate.swift in Sources */,
 				5C83E7BA2372E9B00016DD16 /* PetTableViewCell.swift in Sources */,
 				5C83E7A62372E0120016DD16 /* SceneDelegate.swift in Sources */,
 				5C83E7BC2372EB080016DD16 /* PetTableViewController.swift in Sources */,
+				5CBF02112373856400114654 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

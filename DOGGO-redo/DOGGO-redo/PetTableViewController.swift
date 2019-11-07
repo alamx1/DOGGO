@@ -21,8 +21,14 @@ class PetTableViewController: UITableViewController {
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
         
-        // Load the sample data.
-        loadSampleMeals()
+        // Load any saved meals, otherwise load sample data.
+        if let savedPets = loadPets() {
+            pets += savedPets
+        }
+        else {
+            // Load the sample data.
+            loadSamplePets()
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -48,7 +54,7 @@ class PetTableViewController: UITableViewController {
     @IBAction func unwindToPetList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? PetViewController, let pet = sourceViewController.newPet {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                // Update an existing meal.
+                // Update an existing pet.
                 pets[selectedIndexPath.row] = pet
                 tableView.reloadRows(at: [selectedIndexPath], with: .none)
             }
@@ -59,24 +65,34 @@ class PetTableViewController: UITableViewController {
             pets.append(pet)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
             }
+            // Save the pets.
+            savePets()
         }
     }
     //MARK: Private Methods
-     
-    private func loadSampleMeals() {
+     private func savePets() {
+         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(pets, toFile: Pet.ArchiveURL.path)
+         if isSuccessfulSave {
+             os_log("Pets successfully saved.", log: OSLog.default, type: .debug)
+         } else {
+             os_log("Failed to save pets...", log: OSLog.default, type: .error)
+         }
+     }
+    
+    private func loadSamplePets() {
         let photo1 = UIImage(named: "bear")
         let photo2 = UIImage(named: "bulldog")
         let photo3 = UIImage(named: "golden")
         
-        guard let pet1 = Pet(name: "Caprese Salad", photo: photo1, status: 0) else {
+        guard let pet1 = Pet(name: "Polar", photo: photo1, status: 0, owner: "human1", address: "home", num: "123") else {
             fatalError("Unable to instantiate pet1")
         }
         
-        guard let pet2 = Pet(name: "Chicken and Potatoes", photo: photo2, status: 1) else {
+        guard let pet2 = Pet(name: "Doggy", photo: photo2, status: 1, owner: "human2", address: "apt", num: "345") else {
             fatalError("Unable to instantiate pet2")
         }
         
-        guard let pet3 = Pet(name: "Pasta with Meatballs", photo: photo3, status: 0) else {
+        guard let pet3 = Pet(name: "Cutie", photo: photo3, status: 0, owner: "human3", address: "work", num: "890") else {
             fatalError("Unable to instantiate pet3")
         }
         
@@ -123,6 +139,7 @@ class PetTableViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             pets.remove(at: indexPath.row)
+            savePets()
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -155,7 +172,7 @@ class PetTableViewController: UITableViewController {
         
         switch(segue.identifier ?? "") {
             
-        case "AddItem":
+        case "AddPet":
             os_log("Adding a new pet.", log: OSLog.default, type: .debug)
             
         case "ShowDetail":
@@ -179,4 +196,7 @@ class PetTableViewController: UITableViewController {
         }
     }
 
+    private func loadPets() -> [Pet]?  {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Pet.ArchiveURL.path) as? [Pet]
+    }
 }

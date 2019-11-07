@@ -15,6 +15,10 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImage: UIImageView!
     @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var ownerTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var phoneNumTextField: UITextField!
+    
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     /*
@@ -55,9 +59,12 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
         let name = nameTextField.text ?? ""
         let photo = photoImage.image
         let status = 0//Int(statusLabel.text ?? "0")
+        let owner = ownerTextField.text ?? ""
+        let address = addressTextField.text ?? ""
+        let number = phoneNumTextField.text ?? ""
         
         // Set the meal to be passed to MealTableViewController after the unwind segue.
-        newPet = Pet(name: name, photo: photo, status: status )
+        newPet = Pet(name: name, photo: photo, status: status, owner: owner, address: address, num: number)
     }
     
     override func viewDidLoad() {
@@ -65,6 +72,9 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
         // Do any additional setup after loading the view.
         // Handle the text field’s user input through delegate callbacks.
         nameTextField.delegate = self
+        ownerTextField.delegate = self
+        addressTextField.delegate = self
+        phoneNumTextField.delegate = self
         
         // Set up views if editing an existing Pet.
         if let pet = newPet {
@@ -72,12 +82,14 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
             nameTextField.text   = pet.petname
             photoImage.image = pet.petphoto
             if pet.petstatus == 0 {
-                statusLabel.text = "IDLE"
+                statusLabel.text = "Status       : IDLE"
             }
             else {
-                statusLabel.text = "Connected"
+                statusLabel.text = "Status       : Connected"
             }
-            
+            ownerTextField.text = pet.petowner
+            addressTextField.text = pet.petaddress
+            phoneNumTextField.text = pet.ownernumber
         }
         
         // Enable the Save button only if the text field has a valid Meal name.
@@ -127,10 +139,11 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
         dismiss(animated: true, completion: nil)
     }
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         // The info dictionary may contain multiple representations of the image. You want to use the original.
-        guard let selectedImage = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage else {
+        //MARK: problem??
+        guard let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
         
