@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cmy-gP-UXV">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cmy-gP-UXV">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,15 +13,15 @@
             <objects>
                 <tableViewController id="de1-7R-yRf" customClass="PetTableViewController" customModule="DOGGO_redo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ync-PK-2tr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PetTableViewCell" id="1Qn-Fd-hEL" customClass="PetTableViewCell" customModule="DOGGO_redo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Qn-Fd-hEL" id="cx9-3Y-UQF" customClass="PetTableViewCell" customModule="DOGGO_redo" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-p0-sfe" userLabel="photoImageView">
@@ -74,28 +74,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PetViewController" customModule="DOGGO_redo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jud-TN-Gj3">
-                                <rect key="frame" x="47" y="71" width="320" height="700"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jud-TN-Gj3">
+                                <rect key="frame" x="62.5" y="56" width="250" height="581"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.doc.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bkg-hS-JLK">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="lBj-fo-DZo"/>
-                                            <constraint firstAttribute="height" constant="320" id="tCc-c2-Vfi"/>
+                                            <constraint firstAttribute="width" constant="250" id="lBj-fo-DZo"/>
+                                            <constraint firstAttribute="height" constant="250" id="tCc-c2-Vfi"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Z6s-6p-UTR" appends="YES" id="taq-Oj-Ojq"/>
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrO-tA-43O">
-                                        <rect key="frame" x="0.0" y="350" width="320" height="34"/>
+                                        <rect key="frame" x="0.0" y="280" width="250" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rip-6x-fwd">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="yeo-UH-rFS"/>
                                                 </constraints>
@@ -104,17 +104,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pet name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ro6-WO-w4S">
-                                                <rect key="frame" x="130" y="0.0" width="190" height="34"/>
+                                                <rect key="frame" x="130" y="0.0" width="120" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ien-GK-Tm8">
-                                        <rect key="frame" x="0.0" y="414" width="320" height="34"/>
+                                        <rect key="frame" x="0.0" y="331" width="250" height="20"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjV-A7-QAp">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="6a5-bw-TeW"/>
                                                 </constraints>
@@ -123,17 +123,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="owner name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HNs-If-Viy" userLabel="ownerTextField">
-                                                <rect key="frame" x="130" y="0.0" width="190" height="34"/>
+                                                <rect key="frame" x="130" y="0.0" width="120" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEA-NN-U5N">
-                                        <rect key="frame" x="0.0" y="478" width="320" height="34"/>
+                                        <rect key="frame" x="0.0" y="381" width="250" height="25.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qg-D0-hZH">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="25.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="UwA-zf-Pu4"/>
                                                 </constraints>
@@ -142,14 +142,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pet address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nWQ-lz-UeN" userLabel="addressTextField">
-                                                <rect key="frame" x="130" y="0.0" width="190" height="34"/>
+                                                <rect key="frame" x="130" y="0.0" width="120" height="25.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5J-xS-aws">
-                                        <rect key="frame" x="0.0" y="542" width="320" height="34"/>
+                                        <rect key="frame" x="0.0" y="436.5" width="250" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6f-pt-Mym">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="34"/>
@@ -161,37 +161,104 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="owner phone num" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rt0-R6-mzf" userLabel="phoneNumTextField">
-                                                <rect key="frame" x="130" y="0.0" width="190" height="34"/>
+                                                <rect key="frame" x="130" y="0.0" width="120" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSf-vu-bPQ">
-                                        <rect key="frame" x="0.0" y="606" width="320" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="500.5" width="250" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3u-VT-PUp">
-                                        <rect key="frame" x="0.0" y="656.5" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="551" width="250" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="10E-S8-kgP"/>
+                                        </constraints>
                                         <state key="normal" title="Bluetooth Pairing"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="10E-S8-kgP"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="10E-S8-kgP"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pgv-Fp-UXB"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="d5J-xS-aws" firstAttribute="top" secondItem="jud-TN-Gj3" secondAttribute="top" constant="436.5" id="7P5-Of-t1h"/>
+                                    <constraint firstAttribute="width" constant="250" id="AdR-uy-taR"/>
+                                    <constraint firstItem="BrO-tA-43O" firstAttribute="centerY" secondItem="jud-TN-Gj3" secondAttribute="centerY" id="RdJ-Da-W2O"/>
+                                    <constraint firstItem="HEA-NN-U5N" firstAttribute="top" secondItem="jud-TN-Gj3" secondAttribute="top" constant="381" id="dBW-be-3Hk"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="700" id="r92-vu-B5a"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AdR-uy-taR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="AdR-uy-taR"/>
+                                        <exclude reference="r92-vu-B5a"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="jud-TN-Gj3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="07P-NJ-HTp"/>
+                            <constraint firstAttribute="bottom" secondItem="jud-TN-Gj3" secondAttribute="bottom" constant="-109" id="4PA-HD-wDi"/>
+                            <constraint firstItem="jud-TN-Gj3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7nj-Pc-Vku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jud-TN-Gj3" secondAttribute="bottom" constant="10" id="Gps-6l-ebB"/>
+                            <constraint firstAttribute="bottom" secondItem="jud-TN-Gj3" secondAttribute="bottom" constant="20" id="Hto-Y2-XLG"/>
+                            <constraint firstAttribute="bottom" secondItem="jud-TN-Gj3" secondAttribute="bottom" id="JvH-Q8-Ftl"/>
+                            <constraint firstAttribute="bottom" secondItem="jud-TN-Gj3" secondAttribute="bottom" id="SFR-8e-Oee"/>
+                            <constraint firstItem="jud-TN-Gj3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SR0-hQ-78r"/>
+                            <constraint firstAttribute="bottom" secondItem="jud-TN-Gj3" secondAttribute="bottom" id="Ss6-A8-Vcd"/>
+                            <constraint firstAttribute="bottom" secondItem="jud-TN-Gj3" secondAttribute="bottom" constant="26.5" id="TYN-Jb-g3f"/>
                             <constraint firstItem="jud-TN-Gj3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uqw-g3-y29"/>
-                            <constraint firstItem="jud-TN-Gj3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yss-WU-gh9"/>
+                            <constraint firstItem="jud-TN-Gj3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sHQ-Bq-2PF"/>
+                            <constraint firstItem="jud-TN-Gj3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="v5r-ah-Zha"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="07P-NJ-HTp"/>
+                                <exclude reference="4PA-HD-wDi"/>
+                                <exclude reference="7nj-Pc-Vku"/>
+                                <exclude reference="Hto-Y2-XLG"/>
+                                <exclude reference="JvH-Q8-Ftl"/>
+                                <exclude reference="SFR-8e-Oee"/>
+                                <exclude reference="Ss6-A8-Vcd"/>
+                                <exclude reference="TYN-Jb-g3f"/>
+                                <exclude reference="sHQ-Bq-2PF"/>
+                                <exclude reference="v5r-ah-Zha"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="07P-NJ-HTp"/>
+                                <exclude reference="4PA-HD-wDi"/>
+                                <exclude reference="7nj-Pc-Vku"/>
+                                <exclude reference="Hto-Y2-XLG"/>
+                                <exclude reference="JvH-Q8-Ftl"/>
+                                <exclude reference="SFR-8e-Oee"/>
+                                <exclude reference="Ss6-A8-Vcd"/>
+                                <exclude reference="TYN-Jb-g3f"/>
+                                <exclude reference="sHQ-Bq-2PF"/>
+                                <exclude reference="v5r-ah-Zha"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="New Pet" id="r5Y-ee-56Q">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TYq-id-YlM">
@@ -230,41 +297,44 @@
             <objects>
                 <viewController id="Cmy-gP-UXV" customClass="Home" customModule="DOGGO_redo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uJB-h8-vye">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XhF-pG-Jwp">
-                                <rect key="frame" x="24" y="69" width="366" height="754"/>
+                                <rect key="frame" x="24" y="25" width="327" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding Doggo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FA-ad-CXc">
-                                        <rect key="frame" x="16" y="0.0" width="334.5" height="62.5"/>
+                                        <rect key="frame" x="16.5" y="0.0" width="294.5" height="55"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="44"/>
+                                        </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="800-a7-O5Q">
-                                        <rect key="frame" x="58" y="108.5" width="250" height="340"/>
+                                        <rect key="frame" x="38.5" y="90.5" width="250" height="250"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="340" id="iCo-QB-egv"/>
+                                            <constraint firstAttribute="height" constant="250" id="iCo-QB-egv"/>
                                             <constraint firstAttribute="width" constant="250" id="zIt-l0-Rjn"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrI-3c-qRt">
-                                        <rect key="frame" x="157" y="494.5" width="52" height="30"/>
+                                        <rect key="frame" x="137.5" y="375.5" width="52" height="30"/>
                                         <state key="normal" title="Pet List"/>
                                         <connections>
                                             <segue destination="CGf-dt-wAY" kind="show" id="joT-41-KzI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0c-Ky-hha">
-                                        <rect key="frame" x="154.5" y="570.5" width="57" height="30"/>
+                                        <rect key="frame" x="135" y="441" width="57" height="30"/>
                                         <state key="normal" title="Settings"/>
                                         <connections>
                                             <segue destination="iCf-Zq-H07" kind="show" id="ErB-QF-eEN"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKm-ox-2gm">
-                                        <rect key="frame" x="82" y="646.5" width="202.5" height="41"/>
+                                        <rect key="frame" x="62.5" y="506" width="202.5" height="41"/>
                                         <string key="text">Pet List: View Pets Details 
 and Bluetooth Pairing</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -272,7 +342,7 @@ and Bluetooth Pairing</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings: Control LED and Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8D-h7-EyU">
-                                        <rect key="frame" x="38.5" y="733.5" width="289" height="20.5"/>
+                                        <rect key="frame" x="19" y="582.5" width="289" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -303,17 +373,17 @@ and Bluetooth Pairing</string>
             <objects>
                 <viewController id="iCf-Zq-H07" customClass="Settings" customModule="DOGGO_redo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fiM-EQ-VZA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcH-FQ-ev8">
-                                <rect key="frame" x="42" y="50" width="330" height="54.5"/>
+                                <rect key="frame" x="42" y="50" width="291" height="54.5"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mw0-Mg-2xI">
-                                <rect key="frame" x="21" y="302" width="372" height="60"/>
+                                <rect key="frame" x="21" y="302" width="333" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notif" translatesAutoresizingMaskIntoConstraints="NO" id="GJw-fg-pks">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
@@ -322,13 +392,13 @@ and Bluetooth Pairing</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGU-o2-jAG">
-                                        <rect key="frame" x="90" y="0.0" width="202" height="60"/>
+                                        <rect key="frame" x="90" y="0.0" width="163" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVh-19-KHs">
-                                        <rect key="frame" x="312" y="0.0" width="62" height="60"/>
+                                        <rect key="frame" x="273" y="0.0" width="62" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="OB5-wg-1In"/>
                                             <constraint firstAttribute="width" constant="60" id="g5d-Jg-Vcu"/>
@@ -337,7 +407,7 @@ and Bluetooth Pairing</string>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQJ-P6-fq1">
-                                <rect key="frame" x="21" y="698" width="372" height="60"/>
+                                <rect key="frame" x="21" y="537" width="333" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="95n-Hi-I4v"/>
                                 </constraints>
@@ -348,7 +418,7 @@ if Notification is disabled</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hj4-vZ-FeW">
-                                <rect key="frame" x="21" y="162" width="372" height="60"/>
+                                <rect key="frame" x="21" y="162" width="333" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="led" translatesAutoresizingMaskIntoConstraints="NO" id="Qay-uh-4cU">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
@@ -357,13 +427,13 @@ if Notification is disabled</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cw-ov-xTc">
-                                        <rect key="frame" x="90" y="0.0" width="202" height="60"/>
+                                        <rect key="frame" x="90" y="0.0" width="163" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="bottom" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oCu-Rd-eQM">
-                                        <rect key="frame" x="312" y="0.0" width="62" height="60"/>
+                                        <rect key="frame" x="273" y="0.0" width="62" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Die-4Z-DSm"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="q3k-fQ-XKh"/>
@@ -405,7 +475,7 @@ if Notification is disabled</string>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="GnU-R3-3ce"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WpM-G5-qcm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -423,7 +493,7 @@ if Notification is disabled</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ohr-iW-kzL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fAW-i9-uRb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
