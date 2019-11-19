@@ -130,7 +130,9 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
     }
     
     @IBAction func button(_ sender: UIButton) {
-//        label.text = "default"
+        let url = URL(string: "App-Prefs:root=Bluetooth") //for bluetooth setting
+        let app = UIApplication.shared
+        app.open(url!)
     }
     
     //MARK: UIImagePickerControllerDelegate
