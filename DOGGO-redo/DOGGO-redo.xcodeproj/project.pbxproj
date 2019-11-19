@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E02E16C2382811B007C7CA0 /* BLECentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E16B2382811B007C7CA0 /* BLECentralViewController.swift */; };
+		1E02E16F23837F0F007C7CA0 /* UUIDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E16E23837F0F007C7CA0 /* UUIDKey.swift */; };
+		1E02E17123837F39007C7CA0 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E17023837F39007C7CA0 /* UartModuleViewController.swift */; };
+		1E02E17323837F72007C7CA0 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E17223837F72007C7CA0 /* PeripheralTableViewCell.swift */; };
 		5C83E7A42372E0120016DD16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83E7A32372E0120016DD16 /* AppDelegate.swift */; };
 		5C83E7A62372E0120016DD16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83E7A52372E0120016DD16 /* SceneDelegate.swift */; };
 		5C83E7A82372E0120016DD16 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83E7A72372E0120016DD16 /* PetViewController.swift */; };
@@ -21,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E02E16923827936007C7CA0 /* Bluefruit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bluefruit-Bridging-Header.h"; sourceTree = "<group>"; };
+		1E02E16B2382811B007C7CA0 /* BLECentralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentralViewController.swift; sourceTree = "<group>"; };
+		1E02E16E23837F0F007C7CA0 /* UUIDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
+		1E02E17023837F39007C7CA0 /* UartModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartModuleViewController.swift; sourceTree = "<group>"; };
+		1E02E17223837F72007C7CA0 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
 		5C83E7A02372E0120016DD16 /* DOGGO-redo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOGGO-redo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C83E7A32372E0120016DD16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C83E7A52372E0120016DD16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,9 +56,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E02E16A23827BEA007C7CA0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5C83E7A92372E0120016DD16 /* Main.storyboard */,
+				5C83E7AE2372E0130016DD16 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		5C83E7972372E0120016DD16 = {
 			isa = PBXGroup;
 			children = (
+				1E02E17023837F39007C7CA0 /* UartModuleViewController.swift */,
+				1E02E17223837F72007C7CA0 /* PeripheralTableViewCell.swift */,
+				1E02E16E23837F0F007C7CA0 /* UUIDKey.swift */,
 				5C83E7A22372E0120016DD16 /* DOGGO-redo */,
 				5C83E7A12372E0120016DD16 /* Products */,
 			);
@@ -66,17 +87,18 @@
 		5C83E7A22372E0120016DD16 /* DOGGO-redo */ = {
 			isa = PBXGroup;
 			children = (
+				1E02E16A23827BEA007C7CA0 /* Storyboards */,
 				5C83E7A32372E0120016DD16 /* AppDelegate.swift */,
+				1E02E16B2382811B007C7CA0 /* BLECentralViewController.swift */,
+				1E02E16923827936007C7CA0 /* Bluefruit-Bridging-Header.h */,
 				5C83E7A52372E0120016DD16 /* SceneDelegate.swift */,
 				5C83E7A72372E0120016DD16 /* PetViewController.swift */,
 				5C83E7B72372E84C0016DD16 /* Pet.swift */,
 				5C83E7BB2372EB080016DD16 /* PetTableViewController.swift */,
 				5C83E7B92372E9B00016DD16 /* PetTableViewCell.swift */,
 				5C83E7AC2372E0130016DD16 /* Assets.xcassets */,
-				5C83E7A92372E0120016DD16 /* Main.storyboard */,
 				5CBF02122373865C00114654 /* Settings.swift */,
 				5CBF02102373856400114654 /* Home.swift */,
-				5C83E7AE2372E0130016DD16 /* LaunchScreen.storyboard */,
 				5C83E7B12372E0130016DD16 /* Info.plist */,
 			);
 			path = "DOGGO-redo";
@@ -153,14 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E02E17123837F39007C7CA0 /* UartModuleViewController.swift in Sources */,
 				5C83E7A82372E0120016DD16 /* PetViewController.swift in Sources */,
+				1E02E16C2382811B007C7CA0 /* BLECentralViewController.swift in Sources */,
 				5C83E7B82372E84C0016DD16 /* Pet.swift in Sources */,
 				5CBF02132373865C00114654 /* Settings.swift in Sources */,
 				5C83E7A42372E0120016DD16 /* AppDelegate.swift in Sources */,
 				5C83E7BA2372E9B00016DD16 /* PetTableViewCell.swift in Sources */,
 				5C83E7A62372E0120016DD16 /* SceneDelegate.swift in Sources */,
 				5C83E7BC2372EB080016DD16 /* PetTableViewController.swift in Sources */,
+				1E02E16F23837F0F007C7CA0 /* UUIDKey.swift in Sources */,
 				5CBF02112373856400114654 /* Home.swift in Sources */,
+				1E02E17323837F72007C7CA0 /* PeripheralTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

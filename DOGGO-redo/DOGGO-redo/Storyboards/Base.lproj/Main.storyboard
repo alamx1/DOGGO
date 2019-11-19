@@ -508,9 +508,9 @@ if Notification is disabled</string>
     </scenes>
     <resources>
         <image name="arrow.up.doc.fill" catalog="system" width="56" height="64"/>
-        <image name="led" width="68" height="69"/>
-        <image name="logo" width="166" height="172"/>
-        <image name="notif" width="64" height="62"/>
+        <image name="led" width="834" height="835"/>
+        <image name="logo" width="4267" height="4267"/>
+        <image name="notif" width="834" height="835"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
