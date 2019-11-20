@@ -68,7 +68,7 @@
 		1E02E19A2384E259007C7CA0 /* UartLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartLogManager.swift; sourceTree = "<group>"; };
 		1E02E19C2384E272007C7CA0 /* UartPacketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartPacketManager.swift; sourceTree = "<group>"; };
 		5C52CC7F2384CFB4008A0E57 /* BluetoothTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BluetoothTableViewController.swift; path = "DOGGO-redo/BluetoothTableViewController.swift"; sourceTree = SOURCE_ROOT; };
-		5C83E7A02372E0120016DD16 /* DOGGO-redo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOGGO-redo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C83E7A02372E0120016DD16 /* DOGGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOGGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C83E7A32372E0120016DD16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C83E7A52372E0120016DD16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5C83E7A72372E0120016DD16 /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		5C83E7A12372E0120016DD16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C83E7A02372E0120016DD16 /* DOGGO-redo.app */,
+				5C83E7A02372E0120016DD16 /* DOGGO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C83E79F2372E0120016DD16 /* DOGGO-redo */ = {
+		5C83E79F2372E0120016DD16 /* DOGGO_V2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C83E7B42372E0130016DD16 /* Build configuration list for PBXNativeTarget "DOGGO-redo" */;
+			buildConfigurationList = 5C83E7B42372E0130016DD16 /* Build configuration list for PBXNativeTarget "DOGGO_V2" */;
 			buildPhases = (
 				5C83E79C2372E0120016DD16 /* Sources */,
 				5C83E79D2372E0120016DD16 /* Frameworks */,
@@ -224,9 +224,9 @@
 			);
 			dependencies = (
 			);
-			name = "DOGGO-redo";
+			name = DOGGO_V2;
 			productName = "DOGGO-redo";
-			productReference = 5C83E7A02372E0120016DD16 /* DOGGO-redo.app */;
+			productReference = 5C83E7A02372E0120016DD16 /* DOGGO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5C83E79B2372E0120016DD16 /* Build configuration list for PBXProject "DOGGO-redo" */;
+			buildConfigurationList = 5C83E79B2372E0120016DD16 /* Build configuration list for PBXProject "DOGGO_V2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -257,7 +257,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C83E79F2372E0120016DD16 /* DOGGO-redo */,
+				5C83E79F2372E0120016DD16 /* DOGGO_V2 */,
 			);
 		};
 /* End PBXProject section */
@@ -464,7 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cmpe.DOGGO-redo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DOGGO;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +485,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cmpe.DOGGO-redo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DOGGO;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,7 +495,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C83E79B2372E0120016DD16 /* Build configuration list for PBXProject "DOGGO-redo" */ = {
+		5C83E79B2372E0120016DD16 /* Build configuration list for PBXProject "DOGGO_V2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C83E7B22372E0130016DD16 /* Debug */,
@@ -504,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C83E7B42372E0130016DD16 /* Build configuration list for PBXNativeTarget "DOGGO-redo" */ = {
+		5C83E7B42372E0130016DD16 /* Build configuration list for PBXNativeTarget "DOGGO_V2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C83E7B52372E0130016DD16 /* Debug */,
