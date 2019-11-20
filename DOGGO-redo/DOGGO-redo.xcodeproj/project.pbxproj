@@ -11,6 +11,24 @@
 		1E02E16F23837F0F007C7CA0 /* UUIDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E16E23837F0F007C7CA0 /* UUIDKey.swift */; };
 		1E02E17123837F39007C7CA0 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E17023837F39007C7CA0 /* UartModuleViewController.swift */; };
 		1E02E17323837F72007C7CA0 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E17223837F72007C7CA0 /* PeripheralTableViewCell.swift */; };
+		1E02E1752384D6FB007C7CA0 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1742384D6FB007C7CA0 /* Preferences.swift */; };
+		1E02E1782384D902007C7CA0 /* DfuUpdateProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1772384D902007C7CA0 /* DfuUpdateProcess.swift */; };
+		1E02E17A2384D929007C7CA0 /* FirmwareUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1792384D929007C7CA0 /* FirmwareUpdater.swift */; };
+		1E02E17C2384D940007C7CA0 /* ReleasesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E17B2384D940007C7CA0 /* ReleasesParser.swift */; };
+		1E02E1832384DED1007C7CA0 /* UartPacketManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1822384DED1007C7CA0 /* UartPacketManagerBase.swift */; };
+		1E02E1852384DEF3007C7CA0 /* GattServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1842384DEF3007C7CA0 /* GattServer.swift */; };
+		1E02E1872384DF23007C7CA0 /* PeripheralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1862384DF23007C7CA0 /* PeripheralService.swift */; };
+		1E02E1892384DF3A007C7CA0 /* DeviceInformationPeripheralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1882384DF3A007C7CA0 /* DeviceInformationPeripheralService.swift */; };
+		1E02E18B2384DF59007C7CA0 /* UartPeripheralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E18A2384DF59007C7CA0 /* UartPeripheralService.swift */; };
+		1E02E18D2384DF7C007C7CA0 /* UartPeripheralModePacketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E18C2384DF7C007C7CA0 /* UartPeripheralModePacketManager.swift */; };
+		1E02E18F2384DFE2007C7CA0 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E18E2384DFE2007C7CA0 /* BLEManager.swift */; };
+		1E02E1912384E041007C7CA0 /* BLEPeripheral+Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1902384E041007C7CA0 /* BLEPeripheral+Battery.swift */; };
+		1E02E1932384E0F5007C7CA0 /* BLEPeripheral+Uart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1922384E0F5007C7CA0 /* BLEPeripheral+Uart.swift */; };
+		1E02E1952384E187007C7CA0 /* BlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1942384E187007C7CA0 /* BlePeripheral.swift */; };
+		1E02E1972384E1F0007C7CA0 /* BleUUIDNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1962384E1F0007C7CA0 /* BleUUIDNames.swift */; };
+		1E02E1992384E221007C7CA0 /* UartDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E1982384E221007C7CA0 /* UartDataManager.swift */; };
+		1E02E19B2384E259007C7CA0 /* UartLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E19A2384E259007C7CA0 /* UartLogManager.swift */; };
+		1E02E19D2384E272007C7CA0 /* UartPacketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02E19C2384E272007C7CA0 /* UartPacketManager.swift */; };
 		5C52CC802384CFB4008A0E57 /* BluetoothTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C52CC7F2384CFB4008A0E57 /* BluetoothTableViewController.swift */; };
 		5C83E7A42372E0120016DD16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83E7A32372E0120016DD16 /* AppDelegate.swift */; };
 		5C83E7A62372E0120016DD16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83E7A52372E0120016DD16 /* SceneDelegate.swift */; };
@@ -31,6 +49,24 @@
 		1E02E16E23837F0F007C7CA0 /* UUIDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
 		1E02E17023837F39007C7CA0 /* UartModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartModuleViewController.swift; sourceTree = "<group>"; };
 		1E02E17223837F72007C7CA0 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
+		1E02E1742384D6FB007C7CA0 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		1E02E1772384D902007C7CA0 /* DfuUpdateProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfuUpdateProcess.swift; sourceTree = "<group>"; };
+		1E02E1792384D929007C7CA0 /* FirmwareUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirmwareUpdater.swift; sourceTree = "<group>"; };
+		1E02E17B2384D940007C7CA0 /* ReleasesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesParser.swift; sourceTree = "<group>"; };
+		1E02E1822384DED1007C7CA0 /* UartPacketManagerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartPacketManagerBase.swift; sourceTree = "<group>"; };
+		1E02E1842384DEF3007C7CA0 /* GattServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GattServer.swift; sourceTree = "<group>"; };
+		1E02E1862384DF23007C7CA0 /* PeripheralService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralService.swift; sourceTree = "<group>"; };
+		1E02E1882384DF3A007C7CA0 /* DeviceInformationPeripheralService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInformationPeripheralService.swift; sourceTree = "<group>"; };
+		1E02E18A2384DF59007C7CA0 /* UartPeripheralService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartPeripheralService.swift; sourceTree = "<group>"; };
+		1E02E18C2384DF7C007C7CA0 /* UartPeripheralModePacketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartPeripheralModePacketManager.swift; sourceTree = "<group>"; };
+		1E02E18E2384DFE2007C7CA0 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		1E02E1902384E041007C7CA0 /* BLEPeripheral+Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BLEPeripheral+Battery.swift"; sourceTree = "<group>"; };
+		1E02E1922384E0F5007C7CA0 /* BLEPeripheral+Uart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BLEPeripheral+Uart.swift"; sourceTree = "<group>"; };
+		1E02E1942384E187007C7CA0 /* BlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlePeripheral.swift; sourceTree = "<group>"; };
+		1E02E1962384E1F0007C7CA0 /* BleUUIDNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleUUIDNames.swift; sourceTree = "<group>"; };
+		1E02E1982384E221007C7CA0 /* UartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartDataManager.swift; sourceTree = "<group>"; };
+		1E02E19A2384E259007C7CA0 /* UartLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartLogManager.swift; sourceTree = "<group>"; };
+		1E02E19C2384E272007C7CA0 /* UartPacketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartPacketManager.swift; sourceTree = "<group>"; };
 		5C52CC7F2384CFB4008A0E57 /* BluetoothTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BluetoothTableViewController.swift; path = "DOGGO-redo/BluetoothTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		5C83E7A02372E0120016DD16 /* DOGGO-redo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOGGO-redo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C83E7A32372E0120016DD16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,12 +103,72 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		1E02E1762384D8DF007C7CA0 /* DFU */ = {
+			isa = PBXGroup;
+			children = (
+				1E02E1772384D902007C7CA0 /* DfuUpdateProcess.swift */,
+				1E02E1792384D929007C7CA0 /* FirmwareUpdater.swift */,
+				1E02E17B2384D940007C7CA0 /* ReleasesParser.swift */,
+			);
+			path = DFU;
+			sourceTree = "<group>";
+		};
+		1E02E17D2384DE3D007C7CA0 /* AdafruitKit */ = {
+			isa = PBXGroup;
+			children = (
+				1E02E1812384DEBC007C7CA0 /* Utils */,
+				1E02E17E2384DE80007C7CA0 /* BLE */,
+			);
+			path = AdafruitKit;
+			sourceTree = "<group>";
+		};
+		1E02E17E2384DE80007C7CA0 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				1E02E1802384DEAB007C7CA0 /* BLEPeripheralMode */,
+				1E02E17F2384DE90007C7CA0 /* BLECentralMode */,
+				1E02E1822384DED1007C7CA0 /* UartPacketManagerBase.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		1E02E17F2384DE90007C7CA0 /* BLECentralMode */ = {
+			isa = PBXGroup;
+			children = (
+				1E02E18E2384DFE2007C7CA0 /* BLEManager.swift */,
+				1E02E1902384E041007C7CA0 /* BLEPeripheral+Battery.swift */,
+				1E02E1922384E0F5007C7CA0 /* BLEPeripheral+Uart.swift */,
+				1E02E1942384E187007C7CA0 /* BlePeripheral.swift */,
+				1E02E1962384E1F0007C7CA0 /* BleUUIDNames.swift */,
+				1E02E1982384E221007C7CA0 /* UartDataManager.swift */,
+				1E02E19A2384E259007C7CA0 /* UartLogManager.swift */,
+				1E02E19C2384E272007C7CA0 /* UartPacketManager.swift */,
+			);
+			path = BLECentralMode;
+			sourceTree = "<group>";
+		};
+		1E02E1802384DEAB007C7CA0 /* BLEPeripheralMode */ = {
+			isa = PBXGroup;
+			children = (
+				1E02E1842384DEF3007C7CA0 /* GattServer.swift */,
+				1E02E1862384DF23007C7CA0 /* PeripheralService.swift */,
+				1E02E1882384DF3A007C7CA0 /* DeviceInformationPeripheralService.swift */,
+				1E02E18A2384DF59007C7CA0 /* UartPeripheralService.swift */,
+				1E02E18C2384DF7C007C7CA0 /* UartPeripheralModePacketManager.swift */,
+			);
+			path = BLEPeripheralMode;
+			sourceTree = "<group>";
+		};
+		1E02E1812384DEBC007C7CA0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5C83E7972372E0120016DD16 = {
 			isa = PBXGroup;
 			children = (
-				1E02E17023837F39007C7CA0 /* UartModuleViewController.swift */,
-				1E02E17223837F72007C7CA0 /* PeripheralTableViewCell.swift */,
-				1E02E16E23837F0F007C7CA0 /* UUIDKey.swift */,
 				5C83E7A22372E0120016DD16 /* DOGGO-redo */,
 				5C83E7A12372E0120016DD16 /* Products */,
 			);
@@ -89,8 +185,14 @@
 		5C83E7A22372E0120016DD16 /* DOGGO-redo */ = {
 			isa = PBXGroup;
 			children = (
+				1E02E17D2384DE3D007C7CA0 /* AdafruitKit */,
 				1E02E16A23827BEA007C7CA0 /* Storyboards */,
+				1E02E1762384D8DF007C7CA0 /* DFU */,
+				1E02E17023837F39007C7CA0 /* UartModuleViewController.swift */,
+				1E02E17223837F72007C7CA0 /* PeripheralTableViewCell.swift */,
+				1E02E16E23837F0F007C7CA0 /* UUIDKey.swift */,
 				5C83E7A32372E0120016DD16 /* AppDelegate.swift */,
+				1E02E1742384D6FB007C7CA0 /* Preferences.swift */,
 				1E02E16B2382811B007C7CA0 /* BLECentralViewController.swift */,
 				1E02E16923827936007C7CA0 /* Bluefruit-Bridging-Header.h */,
 				5C83E7A52372E0120016DD16 /* SceneDelegate.swift */,
@@ -179,17 +281,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E02E17123837F39007C7CA0 /* UartModuleViewController.swift in Sources */,
+				1E02E18F2384DFE2007C7CA0 /* BLEManager.swift in Sources */,
 				5C83E7A82372E0120016DD16 /* PetViewController.swift in Sources */,
+				1E02E17A2384D929007C7CA0 /* FirmwareUpdater.swift in Sources */,
 				1E02E16C2382811B007C7CA0 /* BLECentralViewController.swift in Sources */,
 				5C83E7B82372E84C0016DD16 /* Pet.swift in Sources */,
+				1E02E1912384E041007C7CA0 /* BLEPeripheral+Battery.swift in Sources */,
 				5CBF02132373865C00114654 /* Settings.swift in Sources */,
 				5C83E7A42372E0120016DD16 /* AppDelegate.swift in Sources */,
+				1E02E18B2384DF59007C7CA0 /* UartPeripheralService.swift in Sources */,
+				1E02E1872384DF23007C7CA0 /* PeripheralService.swift in Sources */,
+				1E02E1992384E221007C7CA0 /* UartDataManager.swift in Sources */,
 				5C83E7BA2372E9B00016DD16 /* PetTableViewCell.swift in Sources */,
 				5C52CC802384CFB4008A0E57 /* BluetoothTableViewController.swift in Sources */,
+				1E02E1952384E187007C7CA0 /* BlePeripheral.swift in Sources */,
+				1E02E1752384D6FB007C7CA0 /* Preferences.swift in Sources */,
+				1E02E17C2384D940007C7CA0 /* ReleasesParser.swift in Sources */,
+				1E02E1782384D902007C7CA0 /* DfuUpdateProcess.swift in Sources */,
+				1E02E19D2384E272007C7CA0 /* UartPacketManager.swift in Sources */,
+				1E02E1852384DEF3007C7CA0 /* GattServer.swift in Sources */,
+				1E02E1932384E0F5007C7CA0 /* BLEPeripheral+Uart.swift in Sources */,
+				1E02E1972384E1F0007C7CA0 /* BleUUIDNames.swift in Sources */,
+				1E02E1832384DED1007C7CA0 /* UartPacketManagerBase.swift in Sources */,
 				5C83E7A62372E0120016DD16 /* SceneDelegate.swift in Sources */,
 				5C83E7BC2372EB080016DD16 /* PetTableViewController.swift in Sources */,
+				1E02E1892384DF3A007C7CA0 /* DeviceInformationPeripheralService.swift in Sources */,
 				1E02E16F23837F0F007C7CA0 /* UUIDKey.swift in Sources */,
 				5CBF02112373856400114654 /* Home.swift in Sources */,
+				1E02E18D2384DF7C007C7CA0 /* UartPeripheralModePacketManager.swift in Sources */,
+				1E02E19B2384E259007C7CA0 /* UartLogManager.swift in Sources */,
 				1E02E17323837F72007C7CA0 /* PeripheralTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

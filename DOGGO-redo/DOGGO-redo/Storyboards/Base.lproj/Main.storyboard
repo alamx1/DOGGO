@@ -416,7 +416,7 @@ and Bluetooth Pairing</string>
                                 <rect key="frame" x="21" y="302" width="333" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notif" translatesAutoresizingMaskIntoConstraints="NO" id="GJw-fg-pks">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000227" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="0YX-sq-C2w"/>
                                         </constraints>
@@ -451,7 +451,7 @@ if Notification is disabled</string>
                                 <rect key="frame" x="21" y="162" width="333" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="led" translatesAutoresizingMaskIntoConstraints="NO" id="Qay-uh-4cU">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000227" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="oB0-o2-15p"/>
                                         </constraints>
