@@ -8,6 +8,7 @@
 
 import UIKit
 import os.log
+import CoreBluetooth
 
 class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -18,7 +19,6 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
     @IBOutlet weak var ownerTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var phoneNumTextField: UITextField!
-    
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     /*
@@ -129,10 +129,12 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
         present(imagePickerController, animated: true, completion: nil)
     }
     
+    //MARK: Bluetooth pairing
+    
     @IBAction func button(_ sender: UIButton) {
         let url = URL(string: "App-Prefs:root=Bluetooth") //for bluetooth setting
         let app = UIApplication.shared
-        app.open(url!)
+        app.open(url!, options: [:], completionHandler: nil)
     }
     
     //MARK: UIImagePickerControllerDelegate
@@ -163,4 +165,5 @@ class PetViewController: UIViewController, UITextFieldDelegate, UIImagePickerCon
         saveButton.isEnabled = !text.isEmpty
     }
 }
+
 
