@@ -73,7 +73,7 @@ class BlePeripheral: NSObject {
         var servicesSolicited: [CBUUID]? {
             return advertisementData[CBAdvertisementDataSolicitedServiceUUIDsKey] as? [CBUUID]
         }
-        
+
         var serviceData: [CBUUID: Data]? {
             return advertisementData[CBAdvertisementDataServiceDataKey] as? [CBUUID: Data]
         }
@@ -121,12 +121,12 @@ class BlePeripheral: NSObject {
     fileprivate func timeOutRemoveCaptureHandler(identifier: String) {   // Default behaviour for a capture handler timeout
         guard captureReadHandlers.count > 0, let index = captureReadHandlers.firstIndex(where: {$0.identifier == identifier}) else { return }
         // DLog("captureReadHandlers index: \(index) / \(captureReadHandlers.count)")
-        
+
         // Remove capture handler
         captureReadHandlers.remove(at: index)
         finishedExecutingCommand(error: PeripheralError.timeout)
     }
-    
+
     // Internal data
     fileprivate var notifyHandlers = [String: ((Error?) -> Void)]()                 // Nofify handlers for each service-characteristic
     fileprivate var captureReadHandlers = [CaptureReadHandler]()
@@ -254,7 +254,7 @@ class BlePeripheral: NSObject {
         let command = BleCommand(type: .setNotify, parameters: [characteristic, true, handler as Any], completion: completion)
         commandQueue.append(command)
     }
-    
+
     func disableNotify(for characteristic: CBCharacteristic, completion: ((Error?) -> Void)? = nil) {
         let command = BleCommand(type: .setNotify, parameters: [characteristic, false], completion: completion)
         commandQueue.append(command)
@@ -289,7 +289,7 @@ class BlePeripheral: NSObject {
         let command = BleCommand(type: .readDescriptor, parameters: [descriptor, readCompletion as Any], completion: nil)
         commandQueue.append(command)
     }
-    
+
     // MARK: - Rssi
     func readRssi() {
         peripheral.readRSSI()
@@ -452,18 +452,18 @@ class BlePeripheral: NSObject {
         let data = command.parameters![2] as! Data
 
         peripheral.writeValue(data, for: characteristic, type: writeType)
-        
+
         if writeType == .withoutResponse {
             if !command.isCancelled, command.type == .writeCharacteristicAndWaitNofity {
                 let readCharacteristic = command.parameters![3] as! CBCharacteristic
                 let readCompletion = command.parameters![4] as! CapturedReadCompletionHandler
                 let timeout = command.parameters![5] as? Double
-                
+
                 let identifier = handlerIdentifier(from: readCharacteristic)
                 let captureReadHandler = CaptureReadHandler(identifier: identifier, result: readCompletion, timeout: timeout, timeoutAction: timeOutRemoveCaptureHandler)
                 captureReadHandlers.append(captureReadHandler)
             }
-            
+
             finishedExecutingCommand(error: nil)
         }
     }
@@ -558,7 +558,7 @@ extension BlePeripheral: CBPeripheralDelegate {
             finishedExecutingCommand(error: error)
         }
     }
-    
+
     func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
         if let command = commandQueue.first(), !command.isCancelled, command.type == .writeCharacteristicAndWaitNofity {
             let characteristic = command.parameters![3] as! CBCharacteristic
@@ -592,15 +592,15 @@ extension BlePeripheral: CBPeripheralDelegate {
             finishedExecutingCommand(error: error)
         }
     }
-    
+
     func peripheral(_ peripheral: CBPeripheral, didReadRSSI RSSI: NSNumber, error: Error?) {
         guard error == nil else { DLog("didReadRSSI error: \(error!.localizedDescription)"); return }
-        
+
         let rssi = RSSI.intValue
         if rssi != 127 {  // only update rssi value if is defined ( 127 means undefined )
             self.rssi = rssi
         }
-        
+
         NotificationCenter.default.post(name: .peripheralDidUpdateRssi, object: nil, userInfo: [NotificationUserInfoKey.uuid.rawValue: peripheral.identifier])
     }
 }

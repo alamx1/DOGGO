@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class BluetoothTableViewController: UITableViewController {
+    
+    private var cbManager: CBCentralManager!
+    private var cbState = CBManagerState.unknown
+    private var cbPeripherals = [CBPeripheral]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
