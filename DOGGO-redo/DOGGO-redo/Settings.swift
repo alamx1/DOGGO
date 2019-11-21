@@ -10,6 +10,30 @@ import UIKit
 
 class Settings: UIViewController {
 
+    @IBAction func LEDSwitch(_ sender: UISwitch) {
+        if(sender.isOn)
+        {
+            //turn LED on
+        }
+        else
+        {
+            //turn LED off
+        }
+    }
+    
+    @IBAction func notifSwitch(_ sender: UISwitch) {
+        if(sender.isOn)
+        {
+            //turn notif on
+        }
+        else
+        {
+            //turn notif off
+        }
+    }
+    
+    @IBOutlet weak var rangeTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
