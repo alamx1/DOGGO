@@ -197,6 +197,6 @@ class PetTableViewController: UITableViewController {
     }
 
     private func loadPets() -> [Pet]?  {
-        return NSKeyedUnarchiver.unarchivedObject(withFile: Pet.ArchiveURL.path) as? [Pet]
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Pet.ArchiveURL.path) as? [Pet]
     }
 }

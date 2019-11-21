@@ -73,17 +73,5 @@
 	<string>Allow to add photo from phone</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Allow the app to use Bluetooth</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Doggo would like to make data available to connected bluetooth devices while the app is in background</string>
-	<key>NSUserActivityTypes</key>
-	<array>
-		<string>com.adafruit.bluefruitconnect.scan</string>
-	</array>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>bluetooth-central</string>
-		<string>bluetooth-peripheral</string>
-		<string>location</string>
-	</array>
 </dict>
 </plist>
