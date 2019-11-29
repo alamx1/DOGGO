@@ -333,47 +333,57 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XhF-pG-Jwp">
                                 <rect key="frame" x="24" y="25" width="327" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding Doggo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FA-ad-CXc">
-                                        <rect key="frame" x="16.5" y="0.0" width="294.5" height="55"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding Doggo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FA-ad-CXc">
+                                        <rect key="frame" x="31" y="0.0" width="265.5" height="43.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact">
-                                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="44"/>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter-Light" family="American Typewriter" pointSize="38"/>
                                         </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="800-a7-O5Q">
-                                        <rect key="frame" x="38.5" y="90.5" width="250" height="250"/>
+                                        <rect key="frame" x="38.5" y="70.5" width="250" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="iCo-QB-egv"/>
                                             <constraint firstAttribute="width" constant="250" id="zIt-l0-Rjn"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrI-3c-qRt">
-                                        <rect key="frame" x="137.5" y="375.5" width="52" height="30"/>
+                                        <rect key="frame" x="135" y="347" width="57" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Pet List"/>
                                         <connections>
                                             <segue destination="CGf-dt-wAY" kind="show" id="joT-41-KzI"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm4-bv-VVs">
+                                        <rect key="frame" x="126" y="407" width="75" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Map View"/>
+                                        <connections>
+                                            <segue destination="J3Z-2V-hR3" kind="show" id="HZb-Hk-Kd5"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0c-Ky-hha">
-                                        <rect key="frame" x="135" y="441" width="57" height="30"/>
+                                        <rect key="frame" x="131.5" y="466.5" width="64" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Settings"/>
                                         <connections>
                                             <segue destination="iCf-Zq-H07" kind="show" id="ErB-QF-eEN"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKm-ox-2gm">
-                                        <rect key="frame" x="62.5" y="506" width="202.5" height="41"/>
+                                        <rect key="frame" x="83" y="526.5" width="161" height="34"/>
                                         <string key="text">Pet List: View Pets Details 
 and Bluetooth Pairing</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings: Control LED and Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8D-h7-EyU">
-                                        <rect key="frame" x="19" y="582.5" width="289" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="49" y="587" width="229.5" height="16"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -407,16 +417,16 @@ and Bluetooth Pairing</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcH-FQ-ev8">
-                                <rect key="frame" x="42" y="50" width="291" height="54.5"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
+                                <rect key="frame" x="42" y="50" width="291" height="40"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Light" family="American Typewriter" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mw0-Mg-2xI">
-                                <rect key="frame" x="21" y="302" width="333" height="60"/>
+                                <rect key="frame" x="21" y="287.5" width="333" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notif" translatesAutoresizingMaskIntoConstraints="NO" id="GJw-fg-pks">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000227" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="0YX-sq-C2w"/>
                                         </constraints>
@@ -448,10 +458,10 @@ if Notification is disabled</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hj4-vZ-FeW">
-                                <rect key="frame" x="21" y="162" width="333" height="60"/>
+                                <rect key="frame" x="21" y="147.5" width="333" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="led" translatesAutoresizingMaskIntoConstraints="NO" id="Qay-uh-4cU">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000227" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="oB0-o2-15p"/>
                                         </constraints>
@@ -534,6 +544,63 @@ if Notification is disabled</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1c8-Cm-n62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1155" y="-169"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D7L-aC-gPT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J3Z-2V-hR3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="e7s-6P-fFq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3m-lQ-g91">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="32U-Hz-VHK" kind="relationship" relationship="rootViewController" id="Uf4-xl-Ytu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jor-Ip-XL2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-876" y="-690"/>
+        </scene>
+        <!--Map View-->
+        <scene sceneID="Dlq-8b-JrA">
+            <objects>
+                <viewController title="Map View" id="32U-Hz-VHK" customClass="MapView" customModule="DOGGO_redo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yr2-HU-E0f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0TS-8M-vzA">
+                                <rect key="frame" x="0.0" y="56" width="375" height="591"/>
+                                <connections>
+                                    <outlet property="delegate" destination="32U-Hz-VHK" id="AS5-qV-9Fc"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0TS-8M-vzA" firstAttribute="top" secondItem="3n3-9q-kfg" secondAttribute="top" id="0Fd-8p-q7J"/>
+                            <constraint firstItem="3n3-9q-kfg" firstAttribute="trailing" secondItem="0TS-8M-vzA" secondAttribute="trailing" id="AhN-LS-FdW"/>
+                            <constraint firstItem="0TS-8M-vzA" firstAttribute="trailing" secondItem="3n3-9q-kfg" secondAttribute="trailing" id="FN1-KL-O3j"/>
+                            <constraint firstItem="0TS-8M-vzA" firstAttribute="leading" secondItem="3n3-9q-kfg" secondAttribute="leading" id="L9I-1s-DkI"/>
+                            <constraint firstItem="3n3-9q-kfg" firstAttribute="bottom" secondItem="0TS-8M-vzA" secondAttribute="bottom" id="VlU-zQ-xKE"/>
+                            <constraint firstItem="3n3-9q-kfg" firstAttribute="bottom" secondItem="0TS-8M-vzA" secondAttribute="bottom" id="cXm-0H-XIE"/>
+                            <constraint firstItem="0TS-8M-vzA" firstAttribute="leading" secondItem="3n3-9q-kfg" secondAttribute="leading" id="hIm-gn-fMM"/>
+                            <constraint firstItem="0TS-8M-vzA" firstAttribute="top" secondItem="3n3-9q-kfg" secondAttribute="top" id="qGP-Dk-9In"/>
+                            <constraint firstItem="0TS-8M-vzA" firstAttribute="bottom" secondItem="3n3-9q-kfg" secondAttribute="bottom" id="uy5-Lo-BR6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3n3-9q-kfg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cRW-ux-oCe"/>
+                    <connections>
+                        <outlet property="mapView" destination="0TS-8M-vzA" id="ypB-fy-REw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ef-iY-XoN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="-690"/>
         </scene>
     </scenes>
     <resources>
